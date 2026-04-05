@@ -1,10 +1,47 @@
 {
   "name": "xcode-release-size-optimization-agent-skill",
   "version": "0.1.0",
-  "private": true,
-  "description": "Agent skills for analyzing and reducing iOS release build size before App Store submission.",
+  "private": false,
+  "description": "Agent skills and CLI tooling for analyzing and reducing iOS release build size before App Store submission.",
+  "bin": {
+    "xcode-release-size-skill": "bin/xcode-release-size-skill.js"
+  },
+  "files": [
+    "bin",
+    "scripts",
+    "references",
+    "skills",
+    "agents",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danglingP0inter/xcode-release-size-optimization-agent-skill.git"
+  },
+  "homepage": "https://github.com/danglingP0inter/xcode-release-size-optimization-agent-skill",
+  "bugs": {
+    "url": "https://github.com/danglingP0inter/xcode-release-size-optimization-agent-skill/issues"
+  },
+  "keywords": [
+    "xcode",
+    "ios",
+    "ipa",
+    "app-size",
+    "binary-size",
+    "optimization",
+    "agent-skill"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "check": "python3 -m py_compile scripts/*.py",
+    "check": "python3 -m py_compile scripts/*.py && node bin/xcode-release-size-skill.js --help >/dev/null",
+    "cli": "node bin/xcode-release-size-skill.js",
     "report": "python3 scripts/render_report.py",
     "fix:size-settings": "python3 scripts/apply_low_risk_size_fixes.py"
   }
