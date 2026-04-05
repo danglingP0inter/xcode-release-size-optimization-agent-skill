@@ -9,3 +9,7 @@ dist/
 *.pyc
 __pycache__/
 .pycache/
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
