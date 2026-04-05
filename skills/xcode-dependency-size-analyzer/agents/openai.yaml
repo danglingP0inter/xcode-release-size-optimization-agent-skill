@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Dependency Size Analyzer"
+  short_description: "Inspect SwiftPM and packaged dependency weight"
+  default_prompt: "Use $xcode-dependency-size-analyzer to identify dependency-related release-size bloat."

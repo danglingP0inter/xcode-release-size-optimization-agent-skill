@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Size Benchmark"
+  short_description: "Measure baseline and verification release artifacts"
+  default_prompt: "Use $xcode-size-benchmark to capture a release-size baseline for my iOS app."

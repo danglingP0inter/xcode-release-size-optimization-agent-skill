@@ -1,0 +1,11 @@
+{
+  "name": "xcode-release-size-optimization-agent-skill",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent skills for analyzing and reducing iOS release build size before App Store submission.",
+  "scripts": {
+    "check": "python3 -m py_compile scripts/*.py",
+    "report": "python3 scripts/render_report.py",
+    "fix:size-settings": "python3 scripts/apply_low_risk_size_fixes.py"
+  }
+}

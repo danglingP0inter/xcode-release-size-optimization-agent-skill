@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Size Orchestrator"
+  short_description: "Plan iOS release-size analysis and remediation"
+  default_prompt: "Use $xcode-size-orchestrator to analyze my iOS release build size and generate an approval-ready optimization plan."

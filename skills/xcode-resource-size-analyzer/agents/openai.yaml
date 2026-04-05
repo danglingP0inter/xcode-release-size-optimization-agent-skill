@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Resource Size Analyzer"
+  short_description: "Inspect packaged assets and bundled resources"
+  default_prompt: "Use $xcode-resource-size-analyzer to find the heaviest packaged resources in my iOS app."

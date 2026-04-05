@@ -1,0 +1,11 @@
+.DS_Store
+.size-analysis/
+**/.size-analysis/
+DerivedData/
+**/DerivedData/
+*.xcarchive
+*.ipa
+dist/
+*.pyc
+__pycache__/
+.pycache/

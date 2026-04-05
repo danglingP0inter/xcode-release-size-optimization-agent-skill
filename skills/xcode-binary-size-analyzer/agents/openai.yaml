@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Binary Size Analyzer"
+  short_description: "Inspect executables, frameworks, and slices"
+  default_prompt: "Use $xcode-binary-size-analyzer to find the largest binary contributors in my iOS app."

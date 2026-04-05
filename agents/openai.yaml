@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Release Size Optimization Agent Skill"
+  short_description: "Analyze and reduce iOS release build size"
+  default_prompt: "Use $xcode-size-orchestrator to analyze iOS release build size and produce an approval-ready optimization plan."

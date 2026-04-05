@@ -1,0 +1,21 @@
+---
+description: Use when working on iOS release build size, IPA size, archive size, stripping, thinning, or App Store submission size optimization.
+alwaysApply: false
+---
+
+Use this repository's release-size workflow when the task is about optimizing shipped iOS app size.
+
+Preferred workflow:
+- Read `skills/xcode-size-orchestrator/SKILL.md` first.
+- Use only `Release` configuration.
+- Generate evidence in `.size-analysis/`.
+- Use `scripts/measure_release.py` for the baseline.
+- Use `scripts/analyze_macho.py`, `scripts/analyze_resources.py`, and `scripts/analyze_swiftpm.py` for attribution.
+- Use `scripts/render_report.py` to generate the markdown plan.
+- Keep analysis read-only.
+- Only apply low-risk fixes after explicit approval.
+
+Important guardrails:
+- Do not optimize `Debug`.
+- Do not silently enable thinning for App Store-oriented exports.
+- Treat symbol stripping and debug-info changes as medium risk or higher unless clearly safe.

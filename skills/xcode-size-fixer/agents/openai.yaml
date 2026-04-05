@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xcode Size Fixer"
+  short_description: "Apply approved low-risk size optimizations"
+  default_prompt: "Use $xcode-size-fixer to apply the approved items from my size optimization plan and verify the result."
